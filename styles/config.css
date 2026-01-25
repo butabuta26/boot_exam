@@ -7,10 +7,8 @@
     --main-font: "Bricolage Grotesque", sans-serif;
 }
 
-btn-primary{
-    background-color: #FF631B;
-}
 
+/* !moving dot animation */
 @keyframes moveDot {
     0% {
       left: -10px;
@@ -21,4 +19,12 @@ btn-primary{
     100% {
       left: -10px;
     }
+}
+
+
+/* !progress bar animation */
+@keyframes load {
+  to {
+    width: var(--level);
+  }
 }

@@ -1,8 +1,14 @@
 @import url(config.css);
 
 *{
-    margin: none;
+    margin: 0;
+    padding: 0;
     font-family: var(--main-font);
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
 }
 
 .header-container .col-8{
@@ -104,14 +110,14 @@
     color: rgb(192, 192, 192);
 }
 
-.about-us-button{
+.basic-button{
     background-color: #FF631B;
     border:none;
     padding: 15px;
     color: white;
 }
 
-.about-us-button:hover{
+.basic-button:hover{
     background-color: var(--main-dark-blue);
 }
 
@@ -175,7 +181,6 @@
     left: 120px;
     top: -10rem;
     color: white;
-    padding: 5px;
 }
 
 .decor-div-number p{
@@ -186,7 +191,7 @@
     margin-left: 15px;
 }
 
-.services-section {
+.services-section, .team-section, .testimonials-section {
     position: relative;
     background-color: #f3f6f9;
     padding: 100px;
@@ -338,4 +343,354 @@
 
 .text-container-cases button:hover{
     background-color: var(--main-dark-blue);
+}
+
+.video-section{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("../images/building-home.jpeg") center / cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin: auto -10px auto -10px;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+}
+
+.info-container{
+    background-color: var(--main-orange);
+    width: 80%;
+    height: 20rem;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+}
+
+.sub-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sub-info h1, h4{
+    margin-top: -40px;
+}
+
+.sub-info h1{
+    font-weight: 900;
+    font-size: 400%;
+}
+
+.sub-info img{
+    scale: 0.3;
+    margin-top: -2rem;
+}
+
+.skill-image img{
+    width: 95%;
+    margin-left: 4rem;
+}
+
+.skill-description h1{
+    font-weight: 900;
+}
+
+.skill-description p{
+    color: rgb(124, 124, 124);
+}
+
+.progress-bar{
+    margin-top: 1rem;
+}
+
+.bar-description{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.bar{
+    height: 6px;
+    background: #e9ecf5;
+    overflow: hidden;
+}
+
+.filled-part{
+    height: 100%;
+    width: 0;
+    background: #ff6a1a;
+    animation: load 1.2s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.skill-button{
+    margin-top: 2rem;
+}
+
+.team-members-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    gap: 8px;
+}
+
+.team-member{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.team-member img{
+    width: 95%;
+}
+
+.memeber-name{
+    width: 80%;
+    height: auto;
+    border-left: 3px solid var(--main-orange);
+    border-right: 3px solid var(--main-orange);
+    position: absolute;
+    background-color: white;
+    top: 90%;
+    box-shadow: 0 10px 60px #dadada;
+}
+
+.memeber-name h5{
+    font-weight: 900;
+    color: var(--main-dark-blue);
+    margin-left: 10px;
+    margin-top: 1rem;
+}
+
+.memeber-name p{
+    font-weight: 900;
+    color: var(--main-orange);
+}
+
+.pricing-section{
+    margin: 10rem auto 10rem auto;
+}
+
+.pricing-cards-container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pricing-card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 5px 20px #dadada;
+}
+
+.pricing-card h4{
+    font-weight: 800;
+    color: var(--main-orange);
+}
+
+.price-box h1{
+    font-weight: 900;
+    color: white;
+    font-size: 70px;
+    margin-top: 1rem;
+}
+
+.mini-price-bubble{
+    background-color: var(--main-orange);
+    width: 30%;
+    height: auto;
+    margin-top: -1.5rem;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: -2px;
+    border-radius: 30px;
+    margin-bottom: 3rem;
+}
+
+.price-box{
+    width: 100%;
+    background-color: var(--main-orange);
+    height: 25%;
+    padding: 10px;
+}
+
+.price-plan-pros p{
+    margin-bottom: 1rem;
+    color: rgb(124, 124, 124);
+}
+
+.price-plan-pros{
+    margin-bottom: 2rem;
+}
+
+.choose-us-image img{
+    margin-left: -10px;
+}
+
+.choose-us-info{
+    background-color: var(--main-dark-blue);
+    color: white;
+}
+
+.choose-us-info p{
+    color: rgb(124, 124, 124);
+    font-weight: 800;
+}
+
+.choose-us-info ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-info h1{
+    font-weight: 900;
+}
+
+.faq-info p{
+    color: rgb(124, 124, 124);
+}
+
+.faq-collapses button{
+    box-shadow: 0 10px 60px #dadada;
+}
+
+.blog-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.blog-cards-container .card-title{
+    color: var(--main-dark-blue);
+    font-weight: 700;
+}
+
+.blog-cards-container .sub-info{
+    color: var(--main-dark-blue);
+}
+
+.blog-cards-container .sub-info:hover{
+    color: var(--main-orange);
+}
+
+.blog-cards-container .card-title:hover{
+    color: var(--main-orange);
+}
+
+.credits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-section{
+    background-color: var(--main-dark-blue);
+    height: 30rem;
+    color: white;
+}
+
+.first-foot-contents{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30%;
+}
+
+.footer-icons{
+    margin-top: 1rem;
+}
+
+.quick-links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-left: -7rem;
+}
+
+.quick-links a, .our-services-links a{
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+    margin-left: -1rem;
+}
+
+.quick-links a::first-letter, .our-services-links a::first-letter{
+    color: var(--main-orange);
+}
+
+.quick-links a:hover, .our-services-links a:hover{
+    color: var(--main-orange);
+}
+
+.quick-links h5, .our-services-links h5{
+    font-weight: 800;
+}
+
+.our-services-links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-left: -7rem;
+}
+
+.forth-footer-col input{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.7rem;
+}
+
+.forth-footer-col input::placeholder{
+    color: white;
+}
+
+.newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-left: -5rem;
+    width: 90%;
+}
+
+.copyright-claim{
+    background-color: rgb(45, 44, 48);
+    color: white;
+    margin: auto -11px auto -11px;
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+.copyright-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.copyright-links a:hover{
+    color: var(--main-orange);
 }
