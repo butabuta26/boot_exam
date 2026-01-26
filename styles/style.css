@@ -65,6 +65,16 @@ html, body{
     text-align: left;
 }
 
+.intro-carousel-contents h6, h1, p{
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+.intro-carousel-contents .button-section{
+    animation-delay: 2s;
+    animation-duration: 1s;
+}
+
 .colored{
     color: var(--main-orange);
 }
@@ -110,7 +120,12 @@ html, body{
     color: rgb(192, 192, 192);
 }
 
-.basic-button{
+.footer-button:hover{
+    background-color: white;
+    color: var(--main-orange);
+}
+
+.basic-button, .footer-button{
     background-color: #FF631B;
     border:none;
     padding: 15px;
@@ -577,7 +592,9 @@ html, body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-self: center;
     gap: 2rem;
+    width: 80%;
 }
 
 
@@ -693,4 +710,65 @@ html, body{
 
 .copyright-links a:hover{
     color: var(--main-orange);
+}
+
+.page-decor{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("../images/excavator.jpeg") center / cover no-repeat;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    margin: auto -10px auto -10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.page-decor h3{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.page-decor a{
+    color: white;
+    text-decoration: none;
+}
+
+.page-decor a:hover{
+    color: var(--main-orange);
+}
+
+.number-info-container{
+    background-color: var(--main-orange);
+    height: 17rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto -10px auto -10px;
+}
+
+.sub-number-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto -10px auto -10px;
+}
+
+.sub-number-info h1, h4{
+    margin-top: -80px;
+}
+
+.sub-number-info h1{
+    font-weight: 900;
+    font-size: 300%;
+}
+
+.sub-number-info img{
+    scale: 0.3;
+    margin-top: -2rem;
 }
