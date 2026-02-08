@@ -168,14 +168,16 @@ html, body{
     width: 80%;
     margin-left: 120px;
     margin-top: 40px;
+    margin-bottom: -400px;
 }
 
 .decor-div-square{
     width: 70px;
     height: 360px;
     border: 7px solid var(--main-orange);
-    margin-top: -400px;
-    margin-left: 70px;
+    position: relative;
+    left: 16%;
+    z-index: -1;
 }
 
 .decor-div-dots{
@@ -183,18 +185,18 @@ html, body{
     height: 100px;
     border: 7px dotted var(--main-orange);
     position: relative;
-    left: 27rem;
-    top: -50px;
+    left: 31rem;
+    top: -5%;
     z-index: -1;
 }
 
 .decor-div-number{
     width: 160px;
-    height: 100px;
+    height: 90px;
     background-color: var(--main-orange);
     position: relative;
-    left: 120px;
-    top: -10rem;
+    left: 7.5rem;
+    top: -22%;
     color: white;
 }
 
@@ -464,7 +466,38 @@ html, body{
     align-items: center;
     flex-direction: column;
     position: relative;
+    transition: transform 0.3s ease;
 }
+
+.team-member:hover{
+    transform: translateY(-10px);
+}
+
+.team-member:hover .orange-bar{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.orange-bar {
+    position: absolute;
+    left: 75%;
+    top: 5%;
+    width: 3rem;
+    height: auto;
+    background-color: var(--main-orange);
+    opacity: 0;
+    transform: translateX(40px);  
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+  }
+
+  .orange-bar img{
+    scale: 0.7;
+  }
 
 .team-member img{
     width: 95%;
@@ -511,6 +544,11 @@ html, body{
     align-items: center;
     height: 100vh;
     box-shadow: 0 5px 20px #dadada;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover{
+    transform: translateY(-13px);
 }
 
 .pricing-card h4{
