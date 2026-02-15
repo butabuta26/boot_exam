@@ -1,5 +1,5 @@
 @import url(config.css);
-
+holder
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ html, body{
     padding: 0;
 }
 
-.header-container .col-8{
+.header-container .contact-text{
     background-color: var(--main-dark-blue);
     color: white;
     display: flex;
@@ -19,13 +19,14 @@ html, body{
     padding: 1rem 2rem 1rem 6rem;
 }
 
-.header-container .col-4{
+.header-container .icon-holder{
     background-color: var(--main-orange);
     display: block;
+    justify-items: center;
     padding: 1rem 4rem 1rem 8rem;
 }
 
-.header-container .col-8 h5::first-letter{
+.header-container .contact-text h5::first-letter{
     color: var(--main-orange);
 }
 
@@ -79,17 +80,12 @@ html, body{
     color: var(--main-orange);
 }
 
-.carousel-caption{
-    width: 30%;
-    position: relative;
-    top: 15%;
-}
-
 .carousel-caption p{
     scale: 0.8;
     text-align: left;
-    margin-left: -6.5rem;
-    margin-top: 3rem;
+    position: relative;
+    margin-top: 1.5rem;
+    left: -25%;
 }
 
 .sub-title{
@@ -165,18 +161,23 @@ html, body{
 }
 
 .aboutUsImg img{
-    width: 80%;
-    margin-left: 120px;
-    margin-top: 40px;
-    margin-bottom: -400px;
+    width: 100%; 
+    max-width: 400px;
+    margin: auto;
+    margin-left: 5rem;
+}
+
+.aboutUsImg{
+    position: relative;
 }
 
 .decor-div-square{
     width: 70px;
     height: 360px;
     border: 7px solid var(--main-orange);
-    position: relative;
-    left: 16%;
+    position: absolute;
+    left: 14%;
+    top: 10%;
     z-index: -1;
 }
 
@@ -184,9 +185,9 @@ html, body{
     width: 70px;
     height: 100px;
     border: 7px dotted var(--main-orange);
-    position: relative;
-    left: 31rem;
-    top: -5%;
+    position: absolute;
+    left: 77%;
+    top: 85%;
     z-index: -1;
 }
 
@@ -194,9 +195,9 @@ html, body{
     width: 160px;
     height: 90px;
     background-color: var(--main-orange);
-    position: relative;
-    left: 7.5rem;
-    top: -22%;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
     color: white;
 }
 
@@ -365,27 +366,14 @@ html, body{
 .video-section{
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
     url("../images/building-home.jpeg") center / cover no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-    margin: auto -10px auto -10px;
-    position: relative;
+    padding: 70px 0;
     margin-top: 5rem;
-    margin-bottom: 15rem;
 }
 
 .info-container{
     background-color: var(--main-orange);
-    width: 80%;
-    height: 20rem;
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 30px 0;
     color: white;
-    justify-content: center;
 }
 
 .sub-info{
@@ -395,11 +383,8 @@ html, body{
     text-align: center;
 }
 
-.sub-info h1, h4{
-    margin-top: -40px;
-}
-
 .sub-info h1{
+    margin-top: -60px;
     font-weight: 900;
     font-size: 400%;
 }

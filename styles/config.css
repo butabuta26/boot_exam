@@ -28,3 +28,10 @@
     width: var(--level);
   }
 }
+
+@media(max-width: 768px){
+  .info-container{
+    height: 40rem;
+    margin-bottom: 100px;
+  }
+}
